@@ -22,6 +22,7 @@
 		033A064F193256BB005524BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033A062E193256BB005524BF /* UIKit.framework */; };
 		033A0657193256BB005524BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 033A0655193256BB005524BF /* InfoPlist.strings */; };
 		033A0659193256BB005524BF /* QuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 033A0658193256BB005524BF /* QuizTests.m */; };
+		033A066719326282005524BF /* QuizView.m in Sources */ = {isa = PBXBuildFile; fileRef = 033A066619326282005524BF /* QuizView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		033A0654193256BB005524BF /* QuizTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuizTests-Info.plist"; sourceTree = "<group>"; };
 		033A0656193256BB005524BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		033A0658193256BB005524BF /* QuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizTests.m; sourceTree = "<group>"; };
+		033A066519326282005524BF /* QuizView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizView.h; sourceTree = SOURCE_ROOT; };
+		033A066619326282005524BF /* QuizView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizView.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				033A063F193256BB005524BF /* Main_iPad.storyboard */,
 				033A0642193256BB005524BF /* ViewController.h */,
 				033A0643193256BB005524BF /* ViewController.m */,
+				033A066519326282005524BF /* QuizView.h */,
+				033A066619326282005524BF /* QuizView.m */,
 				033A0645193256BB005524BF /* Images.xcassets */,
 				033A0631193256BB005524BF /* Supporting Files */,
 			);
@@ -254,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				033A0644193256BB005524BF /* ViewController.m in Sources */,
+				033A066719326282005524BF /* QuizView.m in Sources */,
 				033A063B193256BB005524BF /* AppDelegate.m in Sources */,
 				033A0637193256BB005524BF /* main.m in Sources */,
 			);
@@ -394,6 +400,7 @@
 				GCC_PREFIX_HEADER = "Quiz/Quiz-Prefix.pch";
 				INFOPLIST_FILE = "Quiz/Quiz-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -407,6 +414,7 @@
 				GCC_PREFIX_HEADER = "Quiz/Quiz-Prefix.pch";
 				INFOPLIST_FILE = "Quiz/Quiz-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
